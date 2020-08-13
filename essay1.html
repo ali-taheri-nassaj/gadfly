@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Essay 1</title>
+  <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="description" content="Essays about computer science, philosophy, and mathematics">
+  <meta name="keywords" content="platomaniac gadfly, gadfly, essay, infinity, complexity, simplicity, recursion, computer science, mathematics, kolmogorov complexity, solomonoff, induction, escher, cantor,  language, philosophy">
+  <meta name="author" content="Ali Taherinassaj">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+.columnLeft {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  text-align: right;
+  font-family: 'Signika Negative', 'Merriweather',  sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size:1vw;
+}
+
+.columnMiddle {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  font-family: 'Signika Negative', 'Merriweather', sans-serif;
+  font-size:1.3vw;
+}
+
+.columnRight {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Signika Negative', 'Merriweather', sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size:1vw;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  height: 100%;
+}
+
+
+.abstract {
+
+  font-style: italic;
+  font-weight: 150;
+
+}
+
+h2 {
+text-align: center;
+}
+
+
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:100%;
+  height:auto;
+}
+
+#header {
+  background: rgba(255, 255, 255, .5);
+  padding: 1%;
+  height: 10vh;
+}
+
+#header img {
+  float: left;
+  box-shadow: none;
+}
+
+#header ul {
+  list-style: none;
+  float: left;
+  padding-left: 1.5vw;
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+}
+
+#header ul li {
+  float: left;
+  margin-left: 1.5vw;
+  font-size: 2.5vh;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+figcaption {
+
+  font-style: italic;
+  font-weight: 100;
+  text-align: center;
+  font-size: 1vw;
+
+}
+
+
+</style>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+
+<a id="top"></a>
+
+<div id="header">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#top">Top</a></li>
+    </ul>
+  </div>
+
+<body>
+
+<body>
+
+<div class="row" style="height=100%; background: rgb(204,204,204);
+background: linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(187,187,187,1) 25%, rgba(187,187,187,1) 75%, rgba(204,204,204,0.9939031708106566) 100%);">
+  <div class="columnLeft">
+    </p><br/><p><b>Keywords</b></p><br/>    
+    <p>Infinity</p>
+    
+    <br/>    
+    <p>ZFC Set Theory</p>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <p>Set</p><br/><br/><br/><br/><br/>
+    <p>Axiom of Choice</p><br/><br/>
+    <p>Potential, Actual Infinity</p><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <p>Finitism</p><br/><br/><br/><br/><br/><br/><br/>
+    <p>Hume's Principle</p>
+    <p>Diagonal Argument</p><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/>
+    <p>Language</p><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/>
+    <p>Infinite Regress</p><br/>
+    <p>Platonic Form</p>
+    <br/><br/><br/><br/><br/><br/><br/>
+    <p>Axiomatic System</p><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <p>Self-Reference</p>
+    <br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/>
+    <p>Free Will</p>
+    <br/><br/><br/>
+    <p>Complexity</p>
+    <br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/>
+    <p>Circulatory System</p>
+    <p>Fractals</p><br/>
+    <br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/>
+    <p>Occam's Razor</p>
+    <p>Algorithmic Probability</p><br/>
+    <p>Kolmogorov Complexity</p>
+    <br/>
+    
+    
+    
+  </div>
+  <div class="columnMiddle" \>
+    
+    
+    <h2>From Infinity to Simplicity</h2>
+    
+    
+    <div class="abstract">
+    <p>In this brief informal essay, I examine materials that I have been reading recently, related to the concepts of infinity, recursion, complexity, and simplicity.</p></div>
+    
+    
+    <p>Infinity in mathematics is a concept that comes in at some point in our education, probably as “…”. We are comfortable with the notion of “real number line” $\mathbb{R}$ or the “set of all natural numbers” $\mathbb{N}$. However, we rarely revisit and use the axioms that constitute the foundations of computer science, calculus, etc., that is zfc set theory. The gap between the real world (our physical measurements and observations) and the idea of infinity is getting larger. We now know that the speed of light is not infinite, and physicists suspect that the whole universe is finite.[5] There is also no consensus on the infinitesimal either, as some scientists propose that space-time is discrete.[6] Even if there is no infinity in Physics, it does not follow that the abstract idea of infinity is false. But along with the complications of the Continuum Hypothesis, one should at least acknowledge that possibility.</p>
+
+<p>Here is the definition of a set by Cantor[14]: <br/><br/>
+
+“A set is a gathering together into a whole of definite, distinct objects of our perception [Anschauung] or of our thought—which are called elements of the set.” (Wikipedia tranlation)
+
+<br/><br/>
+
+This definition is too encompassing and leads to contradictions such as Berry's paradox, or Russell's paradox. The further elaborately developed zfc set theory offers a better ground. But, for example, the axiom of choice is also controversial as it gives rise to the Banach –Tarski paradox.
+</p>
+
+ 
+<p>Studying infinities goes back to the ancient Greeks. Aristotle defines two types of infinities:  potential infinity and actual infinity. (the two following definitions are taken from [17]) Potential infinity refers to a procedure that gets closer and closer to, but never quite reaches, an infinite end. For instance, the sequence of numbers $$1, 2, 3, … $$
+Actual infinity, is an infinity that one actually reaches; the process is already done. For instance, let's put braces around that sequence mentioned earlier:  $$ \{1, 2, 3, ...\} $$
+Aristotle did not believe in the existence of any actual infinity, and hence would not like the new notion of Cantor’s sets. Some mathematicians like Leopold Kronecker, never agreed with the controversial ideas of Cantor. For a further discussion on existence of infinity refer to [18, 19].</p>
+
+
+<p>But let us take set theory for granted and enter the Cantor’s Paradise! One of the interesting results is that the size of natural numbers set is equal to the size of even numbers (they have the same cardinality), since there exists a one-to-one correspondence between the two sets. (Frege names this idea, Hume’s Principle) Another result is that $\mathbb{R}$ and $\mathbb{N}$ have different cardinalities, as there can be no bijection between them, according to Cantor's famous diagonal argument. Any non-zero segment of $\mathbb{R}$ has also the same cardinality as $\mathbb{R}$, because $\mathbb{R}$ reduces to it in the following way:</p>
+
+  <figure>
+  <img src="https://drive.google.com/uc?export=view&id=1wnK5zcd8hez-hgr75DK6CBok_ZI9VsCj" alt="Sorry!" style="width: 30%;"/>
+  <figcaption>Fig.1 One-to-one correspondence of  $\mathbb{R}$ to an arbitrary segment of $\mathbb{R}$(taken from [17])</figcaption>
+</figure>
+
+<p>There are other aspects of recursion and infinity inside languages and cultures. Lasnik argues that: “Infinity is one of the most fundamental properties of human languages, maybe the most fundamental one. People debate what the true universals of language are, but indisputably, infinity is central.” There is no bound or limit on a sentence’s length, as one can always embed a structure within another. Or as Chomsky asserts: “Language is, at its core, a system that is both digital and infinite."</p>
+
+  <figure>
+  <img src="https://drive.google.com/uc?export=view&id=13ThnlPY2yUEr9n0D2zcMXHizMt0eLXaF" alt="Sorry!" style="width: 50%;"/>
+  <figcaption><br/>Fig.2 Recursion in language.</figcaption>
+</figure>
+
+<p>In fact infinity arises in many various ways and has been studied by different philosophers as well. Plato, for example realized that in order to understand the definition of some word, one has to understand the definitions of the words inside. So we either end up in a circular loop, or an infinite regress. The way out of this infinite regress, Plato believes, is to accept that there are some abstract concepts, or platonic forms, that are not understood by their definitions, but through the process of recollection. This kind of knowledge is in fact remembering something that is already within us. He says that these ideas come from our previous existence, and we only recollect what we have forgotten, by encountering imperfect realizations of them in this world. It is interesting to note the ironical way that Simmias asks for the explanation of a platonic form. "But, Cebes" said Simmias, "what were the proofs of this? Remind me, for I do not recollect very well just now.”[15] And that in some sense implies that a platonic form is a platonic form! Another recursion here! <br/>In math and axiomatic systems, when we want to prove a theorem, we regress backwards, and the knowledge that stop us from recursing forever, is the set of axioms that are accepted to be self-evidently true. The set of axioms define a theory. 
+</p>
+
+  <figure>
+  <img src="https://drive.google.com/uc?export=view&id=1jYrG8G9rGYiOGlZj6Fvp4y0N9Hayhez4" alt="Sorry!" style="width: 50%;"/>
+  <figcaption><br/>Fig.3 Ouroboros: an ancient circular symbol depicting a dragon, swallowing its tail, as an emblem of wholeness or infinity.(Google's dictionary)</figcaption>
+</figure>
+
+<p>“I think, therefore I am”, is another famous self-referential argument by René Descartes that leads to an infinite regress, and that is the reason of objection among many philosophers such as Hobbes.</p>
+
+<p>“The  question  may  be  put infinitely,  how  do  you know  that  you know, that you know, that you know? &c,” argued Hobbes. “Wherefore . . .we cannot separate thought from thinking matter, it seems rather to follow, that  a thinking  thing  is material,  than  that  ’tis immaterial.”[16]</p>
+
+
+
+
+  <figure>
+  <img src="https://drive.google.com/uc?export=view&id=1J-_eDUblCNEEYEN2W2J-wU5065yHjWYz" alt="Sorry!" style="width: 30%;"/>
+  <figcaption>Fig.4 The thinker thinks of thinking of thinking, by Michael Corballis[1]
+  </figcaption>
+</figure>
+
+
+<p>Another argument that invokes an infinite regress can be the following. Let us imagine that we have a dangerous serial killer. Is it his fault that he has made the bad decisions? If no, then he has no responsibility. If yes, is it his fault that he is a person that wills to make those bad decisions? If no, then he has no responsibility. If yes, is it his fault that … And you can see the only way to get out of this infinite regress, is to admit there is no free will. </p>
+
+
+
+
+<p>There are many patterns in nature that seem to be limitlessly complex. Inside the human body itself, each of the respiratory system, dendritic trees of the nervous system, and circulatory system are immensely complex. Just a single Purkinje cell can have up to 200 000 connections to granule cells. [11] </p>
+
+  <figure>
+  <img src="https://drive.google.com/uc?export=view&id=1qx5PK9r23enMpL5v20YdTIZT6hXMuC3i" alt="Sorry!" style="width: 80%;"/><br/>
+  <figcaption>Fig.5 Famous drawings of Ramón y Cajal. The drawings illustrates Purkinje cells inside cerebellum</figcaption>
+</figure>
+
+<p>As another example, all cells within the body are at most five cells away from a blood vessel. The circulatory systems is almost everywhere but it only makes up less than 5% of the body mass.[25] These astonishing optimal solutions are only possible in the realm of fractals and fractional dimensions. But how does this enormous complexity fit inside our limited genetic code? The answer is that fractals have extremely simple scale-free local rules (instructions, or genes) from which complexity emerges recursively. The very same idea has helped computer graphic designers to program intricate and realistic images of landscapes, and objects, using a few lines of code.</p>
+
+
+  <figure>
+  <img src="https://drive.google.com/uc?export=view&id=1VJy_xyRj6KEWe85dsdlTjXD2ZS2ukd0o" alt="Sorry!" style="width: 70%;"/><br/>
+  <figcaption>Fig.6 A model for blood vessels, with three recursions (taken from[10])</figcaption>
+</figure>
+
+  <figure>
+  <img src="https://drive.google.com/uc?export=view&id=1u-1ZTog3BK9XXp49LuIj4o6nvt34c69a" alt="Sorry!" style="width: 70%;"/><br/>
+  <figcaption>Fig.7 A fractal mountain scene (taken form [23])</figcaption>
+</figure>
+
+
+
+<p>The advancement of science has made the explanation of many complex phenomena simpler and simpler. In the following paragraph from Discourse on Metaphysics, Leibniz also explains the same concept in different words and asserts that we should seek simple and short descriptions.</p>
+
+<p>"The simplicity of God’s ways relates to the means he adopts, while their variety, richness or abundance relate to ends or effects. These should be in balance with one another, as the money for putting up a building has to be balanced against its desired size and beauty. Admittedly, whatever God does costs him nothing, even less than it costs a philosopher [here = ‘scientist’] to invent theories out of which to build his imaginary world, for God can bring a real world into existence merely by decreeing it. But in the exercise of wisdom, by God or a philosopher, there is something analogous to the cost of a building, namely the number of independent decrees or theories that are involved. For God’s creative activity to be economical is for it to involve very few separate decrees; for a scientific theory to be economical in its means is for it to have very few basic principles or axioms· Reason requires that multiplicity of hypotheses or principles be avoided, rather as the simplest system is always preferred in astronomy."
+</p>
+
+
+<p>This concept, also known as Occam's razor, has been formalized by Solomonoff in a field called algorithmic probability that assigns higher prior probabilities to shorter descriptions of the data (a string). Also the measure of complexity of a string, Kolmogorov complexity, is the length of the shortest description that outputs the string. An infinitely long string might reduce to the simplest non-empty description, as “0.999…” is “exactly” equal to “1”, but a shorter version like 0.999 is harder to describe, and we have to use recursion (might be a for loop)</p>
+
+
+<p>
+So one other way to describe Leibniz might be that “God” has done optimization over the kolmogorov complexities, and chosen the simplest rules! What restricts us from the romantic quest of this holy grail of explanation, is that Kolmogorov complexity is uncomputable, as the existence of any program of finite length for computing it causes a paradox similar to Berry’s paradox!</p>
+
+
+  <figure>
+  <img src="https://drive.google.com/uc?export=view&id=1G5WvR3VjFCg8xae7Xd9-NL-ORCgNThsA" alt="Sorry!" style="width: 80%;"/><br/>
+  <figcaption>Fig.8 Circle Limit I, and III, by Maurits Cornelis Escher</figcaption>
+</figure>
+
+
+
+  
+  
+    
+  <h3>Bibliography and External Links</h3>
+  
+  
+  <div class="abstract">
+
+   
+   <p>1. Michael Corballis, The Recursive Mind: The Origins of Human Language, Thought, and Civilization</p>
+   
+   <p>2. G. Wilhelm Leibniz, Discourse on Metaphysics</p>
+   
+   <p>3. G. J. Chaitin, Epistemology as Information Theory: From Leibniz to Omega</a></p>
+   
+   <p>4. G. Wilhelm Leibniz, Monadology</p>
+   
+   <p>5. Jean-Pierre Luminet, Jeffrey R. Weeks, Alain Riazuelo, Roland Lehoucq, Jean-Philippe Uzan, Dodecahedral space topology as an explanation for weak wide-angle temperature correlations in the cosmic microwave background</p>
+   
+   <p>6. Gerard ’t Hooft, Discreteness and Determinism in Superstrings</p>
+   
+   <p>7. Ambrose Bierce, The Devil's Dictionary</p>
+   
+   <p>8. Ray J. Solomonoff, Algorithmic Probability, Heuristic Programming and AGI</p>
+
+
+   <p>9. Noam Chomsky, Linguistics and Cognitive Science: Problems and Mysteries</a></p>
+
+   <p>10. G. Captur, A. L. Karperien, A. D. Hughes, D. P. Francis, and J. C. Moon, The fractal heart — embracing mathematics in the cardiology clinic</p>
+   
+   <p>11. Toby Tyrrell, David Willshaw, Cerebellar Cortex: Its Simulation and the Relevance of Marr's Theory</p>
+
+   <p>12. Geoffrey K. Pullum, Barbara C. Scholz, Recursion and the infinitude claim</p>
+
+   <p>13. Lasnik, Howard, Syntactic Structures Revisited:  Contemporary Lectures onClassic Transformational Theory</p>
+   
+   <p>14. G. Cantor, Beiträge zur Begründung der transfiniten Mengenlehre</p>
+   
+   <p>15. Plato's Phaedo<p>
+
+   <p>16. G. Dyson, Darwin among the machines</p>
+
+   
+   <p>17. <a href="https://math.vanderbilt.edu/schectex/courses/thereals/potential.html" target="_blank">Eric Schechter , Potential versus Completed Infinity: its history and controversy</a></p>
+   
+   <p>18. <a href="https://youtu.be/E_dGqavx5AU" target="_blank">Infinities and Skepticism in Mathematics: Steve Patterson interviews N J Wildberger</a></p>
+   
+   <p>19. <a href="https://youtu.be/WabHm1QWVCA" target="_blank">Infinity: does it exist?? A debate with James Franklin and N J Wildberger</a></p>
+      
+
+   
+   <p>20. <a href="https://faculty.washington.edu/smcohen/320/thforms.htm" target="_blank">S. Marc Cohen, Theory of Forms (Essay) </a></p>
+   
+   <p>21. <a href="https://youtu.be/gB9n2gHsHN4" target="_blank">3Blue1Brown, Fractals are typically not self-similar</a></p>
+   
+   <p>22. <a href="https://www.ibm.com/ibm/history/ibm100/us/en/icons/fractal/transform/" target="_blank">IBM Website, Fractal Geometry</a></p>
+
+   <p>23. <a href="https://www.programmersought.com/article/27631722719/" target="_blank">Loren Carpenter and the Fractal Mountains
+</a></p>
+ 
+   <p>24. <a href="https://plato.stanford.edu/entries/poincare/" target="_blank">Stanford Encyclopedia of Philosophy, Henri Poincaré</a></p>
+   
+   <p>25. <a href="https://youtu.be/o_ZuWbX-CyE?t=1905" target="_blank">Robert Sapolsky Lecture on emergence and complexity</a></p>
+
+   <p>26. <a href="https://www.informationphilosopher.com/knowledge/infinite_regress.html" target="_blank">Information Philosopher, Infinite Regress</a></p>
+
+   <p>27. <a href="https://plato.stanford.edu/entries/infinite-regress/" target="_blank">Stanford Encyclopedia of Philosophy, Infinite Regress Arguments</a></p>
+ 
+  </div>
+
+  
+  </div>
+  <div class="columnRight">
+  
+  <br/><br/><br/><br/><br/><br/><br/><br/>
+    <p>"I protest against the use of infinite magnitude as something completed, which is never permissible in mathematics. Infinity is merely a way of speaking, the true meaning being a limit which certain ratios approach indefinitely close, while others are permitted to increase without restriction."<br/> (C.F. Gauss)</p>
+
+<br/><br/><br/><br/><br/><br/><br/>
+
+<p>“Classical logic was abstracted from the mathematics of finite sets and their subsets …. Forgetful of this limited origin, one afterwards mistook that logic for something above and prior to all mathematics, and finally applied it, without justification, to the mathematics of infinite sets. This is the Fall and original sin of [Cantor's] set theory ...” <br/>(Hermann Weyl)</p>
+
+<br/><br/><br/><br/>
+
+<p>“There is no actual infinity, the Cantorians have forgotten that, and they have fallen into contradiction. It is true that Cantorism rendered services, but that was when it was applied to a real problem whose terms were clearly defined, and we could walk safely. Logisticians as Cantorians have forgotten." <br/>(Poincaré)
+</p>
+
+
+<br/><br/><br/><br/><br/><br/><br/>
+
+
+
+<p>“God created the integers; all else is the work of man.” <br/>(Leopold Kronecker)
+</p>
+
+<br/><br/><br/>
+
+
+<p>"From the paradise, that Cantor created for us, no-one shall be able to expel us." <br/> (D. Hilbert)</p>
+
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/>
+
+
+<p>“And it is utterly silly, when we are looking for a definition of knowledge, to say that it is right opinion with knowledge, whether of difference or of anything else whatsoever. So neither perception, Theaetetus, nor true opinion, nor reason or explanation combined with true opinion could be knowledge.” <br/>(Plato's Theaetetus)</p>
+
+<br/><br/><br/><br/><br/><br/>
+
+<p>“It is in this way that the speculative theorems and practical canons of the mathematicians are reduced by analysis to definitions, axioms and postulates. Finally, there are simple ideas, which cannot be defined; there are also axioms and postulates, or in a word, primitive principles, which cannot be proved and indeed have no need of proof; these are identical propositions, whose opposite involves an explicit contradiction.”<br/> (G. W. Leibniz)</p>
+
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/>
+
+
+
+
+<p>“Cogito cogito ergo cogito sum, I think I think, therefore I think I am.” <br/>
+(Ambrose Bierce)</p>
+
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/>
+
+
+<p>“Simplicity is the ultimate sophistication.” <br/> (Leonardo da Vinci)</p>
+
+
+
+
+
+  </div>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+</script>
+
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html>
+

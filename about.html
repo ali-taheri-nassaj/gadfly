@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Platomaniac Gadfly</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Essays about computer science, philosophy, and mathematics">
+  <meta name="keywords" content="platomaniac gadfly, essay, infinity, complexity, simplicity, recursion, computer science, mathematics, kolmogorov complexity, solomonoff, induction, escher, cantor,  language, philosophy">
+  <meta name="author" content="Ali Taherinassaj">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://drive.google.com/uc?export=view&id=16rdFOAQDSBGxKMWX4thaBlat-0WqYaf1">
+  
+  
+  
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+.columnLeft {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  text-align: right;
+  font-family: 'Signika Negative', 'Merriweather',  sans-serif;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.columnMiddle {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  font-family: 'Signika Negative', 'Merriweather', sans-serif;
+  font-size:1.4vw;
+}
+
+.columnRight {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Signika Negative', 'Merriweather', sans-serif;
+  font-style: italic;
+  font-weight: 100;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  height: 100%;
+}
+
+.nopadding {
+  padding: 0;
+}
+
+.fullscreen {
+  height: 95%;
+  position: relative;
+}
+
+
+h2 {
+text-align: center;
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:100%;
+  height:auto;
+}
+
+
+#header {
+  background: rgba(255, 255, 255, .5);
+  padding: 1%;
+  height: 10vh;
+}
+
+#header img {
+  float: left;
+  box-shadow: none;
+}
+
+#header ul {
+  list-style: none;
+  float: left;
+  padding-left: 1.5vw;
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+}
+
+#header ul li {
+  float: left;
+  margin-left: 1.5vw;
+  font-size: 2.5vh;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+</style>
+</head>
+
+
+<a id="top"></a>
+
+<div id="header">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#top">About</a></li>
+    </ul>
+  </div>
+
+<body>
+
+
+
+
+<div class="row" style="height=100%; background: rgb(204,204,204);
+background: linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(187,187,187,1) 25%, rgba(187,187,187,1) 75%, rgba(204,204,204,0.9939031708106566) 100%);">
+  <div class="columnLeft">
+    
+    
+    
+  </div>
+  <div class="columnMiddle" \>
+    <h2>About</h2>
+    <p></p><br/><br/>
+    <p>I am Ali Taherinassaj. This is where I am going to write essays, mainly about books or articles that I think are interesting, or maybe some Youtube videos that might be useful! Of course the essays might be full of errors so let me know if you had any interesting points. Thank you!</p>
+
+    <p>Email: ali.taherinassaj@protonmail.com</p>
+  
+  
+  </div>
+  <div class="columnRight">
+    <p></p>
+  </div>
+</div>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
+
+</body>
+
+
+
+</html>
+
