@@ -197,7 +197,7 @@ background: linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(187,187,187,1) 2
     <p>In this brief informal essay, I examine materials that I have been reading recently, related to the concepts of infinity, recursion, complexity, and simplicity.</p></div>
     
     
-    <p>Infinity in mathematics is a concept that comes in at some point in our education probably as “…”. We are comfortable with the notion of “real number line” $\mathbb{R}$ or the “set of all natural numbers” $\mathbb{N}$. However, we rarely revisit and use the axioms that constitute the foundations of computer science, calculus, etc., that is zfc set theory. The gap between the real world (our physical measurements and observations) and the idea of infinity is getting larger. We know that the speed of light is not infinite, and also physicists suspect that the whole universe is finite.[5] There is also no consensus on the infinitesimal either, as some scientists propose that space-time is discrete.[6] Even if there is no infinity in Physics, it does not follow that the abstract idea of infinity is false. But along with the complications of the Continuum Hypothesis, one should at least acknowledge that possibility.</p>
+    <p>Infinity in mathematics is a concept that comes in at some point in our education probably as “…”. We are comfortable with the notion of “real number line” \(\mathbb{R}\) or the “set of all natural numbers” \(\mathbb{N}\). However, we rarely revisit and use the axioms that constitute the foundations of computer science, calculus, etc., that is zfc set theory. The gap between the real world (our physical measurements and observations) and the idea of infinity is getting larger. We know that the speed of light is not infinite, and also physicists suspect that the whole universe is finite.[5] There is also no consensus on the infinitesimal either, as some scientists propose that space-time is discrete.[6] Even if there is no infinity in Physics, it does not follow that the abstract idea of infinity is false. But along with the complications of the Continuum Hypothesis, one should at least acknowledge that possibility.</p>
 
 <p>Here is the definition of a set by Cantor[14]: <br/><br/>
 
@@ -214,11 +214,11 @@ Actual infinity, is an infinity that one actually reaches; the process is alread
 Aristotle did not believe in the existence of any actual infinity, and hence would not like the new notion of Cantor’s sets. Some mathematicians like Leopold Kronecker, never agreed with the controversial ideas of Cantor. For a further discussion on the existence of infinity refer to [18, 19].</p>
 
 
-<p>But let us take set theory for granted and enter the Cantor’s Paradise! One of the interesting results is that the size of natural numbers set is equal to the size of even numbers (they have the same cardinality), since there exists a one-to-one correspondence between the two sets. (Frege names this idea, Hume’s Principle) Another result is that $\mathbb{R}$ and $\mathbb{N}$ have different cardinalities, as there can be no bijection between them, according to Cantor's famous diagonal argument. Any non-zero segment of $\mathbb{R}$ has also the same cardinality as $\mathbb{R}$, because $\mathbb{R}$ reduces to it in the following way:</p>
+<p>But let us take set theory for granted and enter the Cantor’s Paradise! One of the interesting results is that the size of natural numbers set is equal to the size of even numbers (they have the same cardinality), since there exists a one-to-one correspondence between the two sets. (Frege names this idea, Hume’s Principle) Another result is that \(\mathbb{R}\) and \(\mathbb{N}\) have different cardinalities, as there can be no bijection between them, according to Cantor's famous diagonal argument. Any non-zero segment of \(\mathbb{R}\) has also the same cardinality as \(\mathbb{R}\), because \(\mathbb{R}\) reduces to it in the following way:</p>
 
   <figure>
   <img src="https://drive.google.com/uc?export=view&id=1wnK5zcd8hez-hgr75DK6CBok_ZI9VsCj" alt="Sorry!" style="width: 15vw;"/>
-  <figcaption>Fig.1 One-to-one correspondence of  $\mathbb{R}$ to an arbitrary segment of $\mathbb{R}$(taken from [17])</figcaption>
+  <figcaption>Fig.1 One-to-one correspondence of  \(\mathbb{R}\) to an arbitrary segment of \(\mathbb{R}\)(taken from [17])</figcaption>
 </figure>
 
 <p>There are other aspects of recursion and infinity inside languages and cultures. Lasnik argues that: “Infinity is one of the most fundamental properties of human languages, maybe the most fundamental one. People debate what the true universals of language are, but indisputably, infinity is central.” There is no bound or limit on a sentence’s length, as one can always embed a structure within another. Or as Chomsky asserts: “Language is, at its core, a system that is both digital and infinite."</p>
@@ -259,7 +259,7 @@ Aristotle did not believe in the existence of any actual infinity, and hence wou
 
   <figure>
   <img src="https://drive.google.com/uc?export=view&id=1qx5PK9r23enMpL5v20YdTIZT6hXMuC3i" alt="Sorry!" style="width: 30vw;"/><br/>
-  <figcaption>Fig.5 Famous drawings of Ramón y Cajal. The drawings illustrates Purkinje cells inside cerebellum</figcaption>
+  <figcaption>Fig.5 Famous drawings of Ramón y Cajal. The drawings illustrate Purkinje cells inside cerebellum</figcaption>
 </figure>
 
 <p>As another example, all cells within the body are at most five cells away from a blood vessel. The circulatory systems is almost everywhere but it only makes up less than 5% of the body mass.[25] These astonishing optimal solutions are only possible in the realm of fractals and fractional dimensions. But how does this enormous complexity fit inside our limited genetic code? The answer is that fractals have extremely simple scale-free local rules (instructions, or genes) from which complexity emerges recursively. The very same idea has helped computer graphic designers to program intricate and realistic images of landscapes, and objects, using a few lines of code.</p>
@@ -282,10 +282,10 @@ Aristotle did not believe in the existence of any actual infinity, and hence wou
 <p>"The simplicity of God’s ways relates to the means he adopts, while their variety, richness or abundance relate to ends or effects. These should be in balance with one another, as the money for putting up a building has to be balanced against its desired size and beauty. Admittedly, whatever God does costs him nothing, even less than it costs a philosopher [here = ‘scientist’] to invent theories out of which to build his imaginary world, for God can bring a real world into existence merely by decreeing it. But in the exercise of wisdom, by God or a philosopher, there is something analogous to the cost of a building, namely the number of independent decrees or theories that are involved. For God’s creative activity to be economical is for it to involve very few separate decrees; for a scientific theory to be economical in its means is for it to have very few basic principles or axioms· Reason requires that multiplicity of hypotheses or principles be avoided, rather as the simplest system is always preferred in astronomy."</p>
 
 
-<p>This concept, also known as Occam's razor, has been formalized by Solomonoff in a field called algorithmic probability that assigns higher prior probabilities to shorter descriptions of the data (a string). Also the measure of complexity of a string, Kolmogorov complexity, is the length of the shortest description that outputs the string. An infinitely long string might reduce to the simplest non-empty description, as “0.999…” is “exactly” equal to “1”, but a shorter version like 0.999 is harder to describe, and we have to use recursion (might be a for loop)</p>
+<p>This concept, also known as Occam's razor, has been formalized by Solomonoff in a field called algorithmic probability that assigns higher prior probabilities to shorter descriptions of the data (a string). Also the measure of complexity of a string, Kolmogorov complexity, is the length of the shortest description that outputs the string. An infinitely long string might reduce to the simplest non-empty description, as “0.999…” is “exactly” equal to “1”, but a shorter version like 0.999 is harder to describe, and we have to use recursion (might be a for loop) For instance, "Sun will rise tomorrow", is a better theory compared to: "Sun will rise tomorrow, if tomorrow is not 14/3/2022". As both of them work just fine till that day, but the latter is longer, and there is no extra evidence to believe that longer description. It really might be the case that there is something wrong with "14/3/2022" and the sun does not rise on that day, but before then, the first description must have a higher prior probability. Just in the same way, we should anticipate that the next bit of the string: "11111", is "1" as it will make the underlying code shorter. </p>
 
 
-<p>So one other way to describe Leibniz might be that “God” has done optimization over the Kolmogorov complexities and chosen the simplest rules! What restricts us from the romantic quest of this holy grail of explanation is that Kolmogorov complexity is uncomputable, as the existence of any program of finite length for computing it causes a paradox similar to Berry’s paradox!</p>
+<p>One other way to express Leibniz's "simplicity of God's way", could be that “God” has done optimization over the Kolmogorov complexities and chosen the simplest rules! What restricts us from the romantic quest of this holy grail of explanation is that Kolmogorov complexity is uncomputable, as the existence of any program of finite length for computing it causes a paradox similar to Berry’s paradox!</p>
 
 
   <figure>
@@ -356,11 +356,14 @@ Aristotle did not believe in the existence of any actual infinity, and hence wou
  
    <p>24. <a href="https://plato.stanford.edu/entries/poincare/" target="_blank">Stanford Encyclopedia of Philosophy, Henri Poincaré</a></p>
    
-   <p>25. <a href="https://youtu.be/o_ZuWbX-CyE?t=1905" target="_blank">Robert Sapolsky Lecture on emergence and complexity</a></p>
+    <p>25. <a href="https://youtu.be/o_ZuWbX-CyE?t=1905" target="_blank">Robert Sapolsky Lecture on emergence and complexity</a></p>
 
-   <p>26. <a href="https://www.informationphilosopher.com/knowledge/infinite_regress.html" target="_blank">Information Philosopher, Infinite Regress</a></p>
+    <p>26. <a href="https://www.informationphilosopher.com/knowledge/infinite_regress.html" target="_blank">Information Philosopher, Infinite Regress</a></p>
 
-   <p>27. <a href="https://plato.stanford.edu/entries/infinite-regress/" target="_blank">Stanford Encyclopedia of Philosophy, Infinite Regress Arguments</a></p>
+    <p>27. <a href="https://plato.stanford.edu/entries/infinite-regress/" target="_blank">Stanford Encyclopedia of Philosophy, Infinite Regress Arguments</a></p>
+
+    
+   <p>27. <a href="https://web.archive.org/web/20020205181710/http://www.cs.yorku.ca/~peter/Berry.html">Berry's Paradox, Peter H. Roosen-Runge</a></p>
  
   </div>
 
@@ -397,9 +400,12 @@ Aristotle did not believe in the existence of any actual infinity, and hence wou
 
 
 
-<p>“Simplicity is the ultimate sophistication.” <br/> (Leonardo da Vinci)</p>
+    <p style="margin-bottom: 5vw;">“Simplicity is the ultimate sophistication.” <br/> (Leonardo da Vinci)</p>
 
 
+    <p style="margin-bottom: 30vw;">“Everything should be made as simple as possible, but not simpler.<br/> (Albert Einstein)</p>
+
+    <p style="margin-bottom: 5vw;">"'The least integer not nameable in fewer than nineteen syllables' is itself a name consisting of eighteen syllables; hence the least integer not nameable in fewer than nineteen syllables can be named in eighteen syllables, which is a contradiction." (Berry's Paradox, Bertrand Russell)</p>
 
 
 
@@ -423,7 +429,6 @@ function myFunction() {
 </script>
 
 
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 </body>
 </html>
