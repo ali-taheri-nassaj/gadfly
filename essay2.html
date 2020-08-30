@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Essay 2</title>
+  <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="description" content="Essays about computer science, philosophy, and mathematics">
+  <meta name="keywords" content="platomaniac gadfly, gadfly, essay, computer science, mathematics, Evolution, solomonoff, AI, Machine Learning, Robotics, Inference, philosophy">
+  <meta name="author" content="Ali Taherinassaj">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+.columnLeft {
+  float: left;
+  width: 25%;
+  padding: 1vw;
+  text-align: right;
+  font-family: 'Signika Negative', 'Merriweather',  sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size:1vw;
+}
+
+.columnMiddle {
+  float: left;
+  width: 50%;
+  padding: 1vw;
+  font-family: 'Signika Negative', 'Merriweather', sans-serif;
+  font-size:1.3vw;
+}
+
+.columnRight {
+  float: left;
+  width: 25%;
+  padding: 1vw;
+  text-align: center;
+  font-family: 'Signika Negative', 'Merriweather', sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size:1vw;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  height: 100%;
+}
+
+
+.abstract {
+
+  font-style: italic;
+  font-weight: 150;
+
+}
+
+h2 {
+text-align: center;
+}
+
+
+p {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:100%;
+  height:auto;
+}
+
+#header {
+  background: rgba(255, 255, 255, .5);
+  padding: 1%;
+  height: 5vw;
+}
+
+#header img {
+  float: left;
+  box-shadow: none;
+}
+
+#header ul {
+  list-style: none;
+  float: left;
+  padding-left: 0.8vw;
+  margin-top: 0.8vw;
+  margin-bottom: 1.5vw;
+}
+
+#header ul li {
+  float: left;
+  margin-left: 1.5vw;
+  font-size: 1.2vw;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+figcaption {
+
+  font-style: italic;
+  font-weight: 100;
+  text-align: center;
+  font-size: 1vw;
+
+}
+
+
+</style>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+
+<a id="top"></a>
+
+<div id="header">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#top">Top</a></li>
+    </ul>
+  </div>
+
+<body>
+
+<body>
+
+<div class="row" style="height=100%; background: rgb(204,204,204);
+background: linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(187,187,187,1) 25%, rgba(187,187,187,1) 75%, rgba(204,204,204,0.9939031708106566) 100%);">
+  <div class="columnLeft">
+    <p style="margin-top:10em; margin-bottom: 3.1em;"><p style="margin-bottom: 10vw;"><a href="https://www.etymonline.com/word/robot#etymonline_v_15132" target="_blank">robot</a>: from English translation of 1920 play "R.U.R." ("Rossum's Universal Robots"), by Karel Capek (1890-1938), from Czech robotnik "forced worker," from robota "forced labor, compulsory service, drudgery,"</p></p> 
+    <p style="margin-bottom: 3.8em;"></p>
+    <p style="margin-bottom: 17em;"></p>
+    <p style="margin-bottom: 8em;"></p>
+    <p style="margin-bottom: 5em;"></p>
+    <p style="margin-bottom: 17em;"></p>
+    <p style="margin-bottom: 7em;"></p>
+    <p style="margin-bottom: 2em;"></p>
+    <p style="margin-bottom: 35em;"></p>
+    <p style="margin-bottom: 38em;"></p>
+    <p style="margin-bottom: 4em;"></p><br/>
+    <p style="margin-bottom: 7em;"></p>
+    <p style="margin-bottom: 38em;"></p>
+    <p style="margin-bottom: 40em;"></p>
+    <p style="margin-bottom: 13em;"></p>
+    <p style="margin-bottom: 29em;"></p>
+    <p style="margin-bottom: 3em;"></p>
+    <p style="margin-bottom: 60em;"></p>
+    <p style="margin-bottom: 4em;"></p>
+    <p style="margin-bottom: 1em;"></p><br/>
+    <p></p>
+    <br/>
+    
+    
+    
+  </div>
+  <div class="columnMiddle" \>
+    
+    
+    <h2>Cogito Bot</h2>
+    
+    
+    <div class="abstract">
+    <p>This essay examines the historical and philosophical distinctions in artificial intelligence that have implications on research approaches in the field.</p></div>
+    
+    
+    <p>There is no single simple answer to the question of “what is AI?”. There is no answer to the problem of “What is intelligence?” or “Can machines think?” either. As far as I can tell from the papers and the books that I have been reading, there is no agreement on any aspect of it at all. When studied deeply backwards, it is tight to questions about existence, life, self, mind, thought, perception, reality, science, etc.
+And when studied forwards, we see it is a general-purpose technology that has a wide range of applications in almost all areas of science and engineering and will have significant implications on society, politics, etc.</p>
+
+    <p>Nobody knows where it is going or what its limits are. Some people think it is just another technology, while others consider it to be an existential threat to humanity. Opinions vary from “it is going to solve all of the human’s medical and social problems, and make us live forever” to “it is going to wipe every single person out of the planet!”. Whatever it is, I think it is worth thinking about as our mindset and beliefs about it will affect how we go about researching this area.</p>
+
+   <h3>Study ourselves to design robots and Design robots to study ourselves</h3>
+
+
+
+<div class="abstract">Artificial intelligence is an empirical science with two major branches. One branch is concerned with building computer programs (and sometimes robots) to perform tasks that are regarded as requiring intelligence when they are performed by human beings. The other is concerned with building computer programs that simulate, and thereby serve as theories of, the thought processes of human beings engaged in these same tasks.” (Herbert A. Simon)</div>
+
+
+<p>One of the dichotomies here is that of science and engineering. To design robots, engineers seek inspiration from science. Convolutional Neural Networks, for instance, try to imitate how vision works inside our brains. The science behind it was the discovery of receptive fields, simple cells, etc. by Hubel and Wiesel in the 1950s. </p>
+
+
+<p>“What I cannot create, I do not understand.” (R. Feynman) best describes the situation for our case. Aside from the applications of AI and robotics, creating models of human cognition may help us understand how the mind works. Marvin Minsky believes that unlike physics in which a vast portion of mechanical phenomena in the real world reduces to just three laws of Newton, we cannot find simple rules of describing the brain.[29] Consequently, computational models will probably play an increasingly more significant role in the future of psychology and other sciences.</p>
+
+  <figure>
+  <img src="https://drive.google.com/uc?export=view&id=1Oph4TmpOejyLGAA2b1GZRvrnVUuepDBc" alt="Sorry!" style="width: 30vw;"/>
+  <figcaption></figcaption>
+</figure>
+
+
+
+
+<h3>Flying and Thinking</h3>
+<p>Flying has long been one of the human’s dreams. The famous story of the fall of Icarus serves as an example of this dream in Greek mythology. After being imprisoned by King Minos of Crete at the top of a tower (a fascinating story!), Daedalus engineers the first flying wings from feathers and wax for his son Icarus and himself. Sadly, Icarus’ ego allures him to the climax of the sky, where he melts his wings and falls into his ill destiny. The dream of flying was later pursued by the Daedalus of Italy, Leonardo da Vinci. He observes the flying of birds and comes up with several rules in his codex <i>On the flight of birds</i>. Here is one of his laws:
+</p>
+
+<div class="abstract">
+If the wing and the belly are too far above the wind, then you must lower the opposite wing to allow the wind to strike and push upward, thus righting yourself.[28]</div>
+
+
+<p>Although he designs his flying wings, he never actually builds them. Today the credit of the first successful motor-operated flying machines is given to the Wright Brothers.</p>
+
+  <figure>
+  <img src="https://drive.google.com/uc?export=view&id=1gvggkPABmYosrdoVItxXH02hmWmYJSPX" alt="Sorry!" style="width: 30vw;"/>
+  <figcaption>Jacob Peter Gowy's The Flight of Icarus - Da Vinci' Drawing - Wilbur Wright Flying</figcaption>
+</figure>
+
+<p>The relevant question here is whether creating robots has a similar scenario. The first robot in Greek mythology was made by the god of forge and technology, Hephaestus. It was a giant living statue created from bronze as a gift to Minos, the King of Crete. The repetitive duty of this robot, which was made and not born (first chapter of [4]), was to guard the island against intruders by marching around it three times a day. He had many abilities, such as being able to heat his body and turn it into a red-hot stove where his victims were to burn into their corpses. As one would expect, he also had a vulnerability; a bronze bolt at his ankle that was eventually removed by the Argonauts and caused ichor (a life-giving fluid, or divine blood) to bleed out of his metallic body. There are several attempts at creating automatic machines or intelligence in ancient Greece, but perhaps the most relevant episodes are the works of logic by Zeno, Plato, Aristotle, and Stoics. These works study logic as a means to philosophy for making arguments reliable. But the same laws will be formalized algebraically in the works of Bool and others in the 19th century. Aristotle also studies the anatomical aspects of the human body. Later in the 16th century, Leonardo Da Vinci, who has studied anatomy and is obsessed with mechanical machines, tries to design a simple human-like robot named <i>Automa Cavaliere</i> that is programmed to work by pulleys and gears. However, it certainly is not intelligent in the sense that we are looking for. </p>
+
+  <figure>
+  <img src="https://drive.google.com/uc?export=view&id=1VUC_BjGYV_ZaypQpgrj3WJAQsKMZy5V1" alt="Sorry!" style="width: 30vw;"/>
+  <figcaption>Da Vinci's Drawing - Automata Cavaliere - Talos</figcaption>
+</figure>
+
+
+
+<p>In his book “The Evolution of Reason,” William S. Cooper asserts that to answer the question of “How do birds manage to fly?” one should first explain the theory of aerodynamics under which the designs of the wings succeed. And secondly, one has to discuss the adaptations under the process of Darwinian evolution that resulted in the birds’ wing design. Does “How do humans manage to reason?” have a similar answer? His thesis is that there is no logic theory similar to aerodynamics that can explain the reasoning process or human understanding. He believes that reasoning reduces to decision theory and, finally, evolutionary biology! Maybe his answer is too radical, but the question is worth thinking about.</p>
+
+
+<div class="abstract">Of all the faculties of the human mind, it will, I presume, be admitted that Reason stands at the summit. Only a few persons now dispute that animals possess some power of reasoning. Animals may constantly be seen to pause, deliberate, and resolve. It is a significant fact, that the more the habits of any particular animal are studied by a naturalist, the more he attributes to reason and the less to unlearnt instincts. . . . (Charles Darwin)</div>
+
+<h3>Life and Cybernetics</h3>
+
+<p>The main concern of AI is not whether machines are alive, can be alive, etc. There is no universal definition of life anyways. However, living organisms exhibit behaviors that if examined, can be very valuable not only for the sake of science and curiosity but also for engineering. <br/>
+Here is how Erwin Schrödinger defines life:
+</p>
+
+
+<div class="abstract">An organism's astonishing gift of concentrating a 'stream of order' on itself and thus escaping the decay into atomic chaos.
+</div>
+
+<p>Homeostasis is the control process by which the existence and maintenance of an agent are possible. It occurs on many levels, for example, regulatory mechanisms inside each cell control gene expression. The feedback loop that controls the glucose level in the blood also has a similar circuitry that releases insulin and glucagon until the level reaches a stable state. At some other level homeostasis is an active process in which an agent gets input from the environment, processes the information, and responds accordingly. The agent seems to have memory (to be able to learn), a processing unit, and a means of communication. The means of communication does not have to be fancy, cells communicate using chemical signals. In the learning section, we will see how agents change their internal model of the world to be able to behave according to their goals.</p>
+
+  <figure>
+  <img src="https://drive.google.com/uc?export=view&id=107etuKFDJUoR88Yd20nyX3EOknx0YWrD" alt="Sorry!" style="width: 30vw;"/>
+  <figcaption>Impressionistic Overview of an Intelligent Agent (taken from [32])</figcaption>
+</figure>
+
+<p>The science that aims to capture this idea of control, communication, goal-directed behavior, and autonomy is called cybernetics. This field that looks more general than biology is defined by Norbert Wiener in his seminal book <i>Cybernetics: Or Control and Communication in the Animal and the Machine</i>:</p>
+
+
+
+<div class="abstract">We have decided to call the entire field of control and communication theory, whether in the machine or in the animal, by the name Cybernetics, which we form from the Greek χυβερνήτης or steers-man. In choosing this term, we wish to recognize that the first significant paper on feedback mechanisms is an article on governors, which was published by Clerk Maxwell in 1868, and that governor is derived from a Latin corruption of χυβερνήτης. We also wish to refer to the fact that the steering engines of a ship are indeed one of the earliest and best-developed forms of feedback mechanisms.</div>
+
+<h3>Learning and Inference</h3>
+
+<p>The construction of internal models of the environment inside the agent requires memory. Aristotle states in his treatise <i>On Memory
+</i>  that memory works by associating related patterns that can be of different types. These are the set of observations by Aristotle or the Classical Laws of Association:</p>
+
+
+<p>Mental items (ideas, perceptions, sensations, or feelings) are connected in memory under the following conditions: 
+<br/>1) If they occur simultaneously ("spatial contact").
+<br/>2) If they occur in close succession ("temporal contact"). 
+<br/>3) If they are similar. 
+<br/>4) If they are contrary.[23]
+</p>
+
+<p>Hume who comes after the development of Newtonian mechanics when many mechanical phenomena are now explainable or somehow “learned” proposes an extremely foundational problem to the learning of “Matters of Fact”, the term he uses in his <i>An Enquiry Concerning Human Understanding
+</i>. We learn matters of fact, or our a posteriori knowledge, through the association of the events that we perceive. For instance, we see a billiard ball moving and colliding into the second ball. He argues that Adam or the first man in his first experience had no way of telling what would happen after the collision. We learn by observing the ways that the second ball starts moving. We abstract our observations into a more general and compressed form that can be used to extrapolate in new situations by evoking the same idea. For example, in the case of collision of two cubes, we will know to an extent what will happen because we already know what has happened with the two colliding billiard balls. As we gain a better understanding of the phenomena, we come up with simpler and better theories that help us generalize and predict the future. The fundamental problem that Hume proposes is that real understanding is impossible and there is no reason to believe that what has happened in the past will continue to happen in the future. Our theories might stop working as of August 2030. He concludes that we can only predict the future with uncertainty. The prediction of the future is crucial for our survival and reasoning and this argument seems to be very troubling. However this assumption of “uniformity” or “future resembles the past” is the only way to go. If we do not accept this assumption there is really nothing we can do!</p>
+
+<div class="abstract">Our idea . . . of necessity and causation arises entirely from the uniformity, observable in the operations of nature; where similar objects are constantly conjoined together, and the mind is determined by custom to infer the one from the appearance of the other. . . . Beyond the constant conjunction of similar objects, and the consequent inference from one to the other, we have no notion of any necessity, or connexion. (David Hume)</div>
+
+
+<h3>Instinct and Intelligence</h3>
+
+<p>Aristotle who is often recognized as the originator of the scientific study of life[33], aims for a mechanistic understanding of animal behavior. He notes that animals have sinews and bones that function much like the cables attached to pegs or iron rods inside automata[4]. However, he draws a line between human intelligence and animal instinct. Later Descartes draws a similar line between humans and animals. Descartes considers animals as soulless machines or automata that are blackbox systems with predictable behavior. His theory of mechanical reflexes initiates future developments of Pavlovian behaviorism. The distinction, however, is not to last. Darwin crushes this separation by a massive body of evidence that he has been gathering for more than a decade. His incredible discovery hits our egocentric views yet again in the same way that Copernicus had by knocking us out of the center of the universe. </p>
+
+<p>Let us linger on the subject of evolution. We need to recognize that this idea is much more general than just biology and has implications in all other areas of science and engineering. It is a very powerful method of design. The key insight which Dennett calls “strange inversion” is that “In order to make a perfect and beautiful machine, it is not requisite to know how to make it.”[7] Evolution undermines the top-down arguments for design (mainly creationists who believed every watch has a watchmaker) and shows us how simple mindless variations can yield astonishing solutions to their environments in a bottom-up way.</p>
+
+<p>Hume’s argument also suggests that we are not as smart as we would like to assume we are: “We know in no better position than the dog who when you go for the lead near the front door starts jumping up and down with anticipation of going for a walk. Why does it do it habit it associates you going for the lead with going for a walk it doesn't have any rational insight into the connection between the two it's just habit and we seem to be the same with billiard balls.” All we can do is to observe, experiment, systematize, and generalize not to reach a perfect understanding.</p>
+
+
+
+<h3>Physicalism and Dualism</h3>
+
+
+<p>Another deep-rooted problem that related to AI is the mind-body debate. In the ancient Greece Democritus troubled by Zeno’s paradox and Parmenidean arguments develops the atomic theory. He famously quotes that “nothing exists except atoms and empty space; everything else is opinion.” However, dualism is still the dominant paradigm and is supported by the majority of philosophers such as Socrates and Plato. One of the most famous antagonisms between the two sides happened in the 17th century when Descartes as explained in the last sections believed that animals are automata unlike humans that have souls and that makes the two fundamentally unalike. Whereas Hobbes states that we are just like the other animals and there is no such thing as a soul. </p>
+
+<div class="abstract">What is the Heart, but a Spring; and the Nerves, but so many Strings; and the Joints, but so many Wheeles, giving motion to the whole Body, such as was intended by the Artificer?” asked Hobbes. “Art goes yet further, imitating that rationall and most excellent work of Nature, Man. For by Art is created that great LEVIATHAN called a COMMON-WEALTH . . . which is but an Artificiall Man.[10]</div>
+
+<p>Moreover he sketches life as a mechanical process. In addition he discusses the possibility of having artificial machines and automata that have artificial life.
+
+<div class="abstract">For seeing life is but a motion of Limbs, the beginning whereof is in the principall part within; why may we not say that all Automata (Engines that move themselves by springs and wheelesas doth a watch) have an artificiall life?</div>
+</p>
+
+<p>On the other trench, Leibniz brings forth a well-known thought experiment known as Leibniz’s gap in his <i>Monadology</i> :</p>
+
+<div class="abstract">Moreover, it must be confessed that perception and that which depends on it are inexplicable in mechanical terms, that is, in terms of figures and motions. And supposing there were a machine, so constructed as to think, feel, and have perception, one could imagine it increased in size, while keeping the same proportions, so that one could go into it as into a mill. In that case, we should, on examining its interior, find only parts that work upon one another, and never anything by which to explain a perception. Thus, perception must be sought in a simple substance, and not in a composite or machine. Further, nothing but this (namely, perceptions and their changes) can be found in a simple substance. It is in this alone also that all the internal actions of simple substances can consist.[11]
+</div>
+
+ <figure>
+  <img src="https://drive.google.com/uc?export=view&id=1HCcT-01ou4NbcrfvqHThtgrwoJY3iSR5" alt="Sorry!" style="height: 30vw;"/>
+  <figcaption><a href="https://www.julieelizabethkirsch.com/brainsmindsselves/lbf82aslrjqiqrpiz91hxogu64m2fe" target="_blank">Leibniz's Mill</a> by Julie Elizabeth Kirsch</figcaption>
+</figure>
+
+<p>Arguments of similar taste surface again after the development of symbolic AI. Searle’s Chinese room experiment basically aims to show that it is not possible for semantics to emerge out of pure syntactic manipulations. You can read more about the controversies and counter-arguments <a href="https://plato.stanford.edu/entries/chinese-room/" target="_blank">here</a>.</p>
+
+<h3>Rationalism and Empiricism</h3>
+
+<p>Another critical dichotomy is about the ways we gain knowledge. It shows up in different flavors all over the field. For instance, a designer will have to consider the exploration-exploitation trade-off for reinforcement learning agents.</p>
+
+<p>Rationalist methods primarily work by reliable and unambiguous deductions from a priori knowledge. The first rigorous study of logic by Aristotle in his series of books known as <i>Organon</i> influences scholars for centuries and dominates academia. The holy grail of logical inference is Leibniz’s <i>lingua characteristica</i>, a clear language that offers us the possibility of reaching all knowledge. You just need to turn the crank of <i>calculus ratiocinator</i> and get the result. Although it seems that Godel’s incompleteness theorems should limit that possibility, Godel himself was obsessed with the utopian project. </p>
+
+<div class="abstract">If controversies were to arise, there would be no more need of disputation between two philosophers than between two accountants (Computistas). For it would suffice to take their pencils in their hands, to sit down to their slates (abacos), and to say to each other … : Let us calculate (Calculemus).</div>
+
+<p>Looking at the empiricist side of history, <i>Novum Organum</i> by Francis Bacon is a seminal work that influenced the scientific method which is based on observation and induction of rules and theories. The new paradigm shifts the focus from deductive reasoning to inductive inference and generalization. In <i>Computing Machinery and Intelligence</i> Alan Turing also conjectures the significance of experimental methods in AI.</p>
+
+<div class="abstract">It is natural that we should wish to permit every kind of engineering technique to be used in our machines. We also wish to allow the possibility that an engineer or team of engineers may construct a machine which works, but whose manner of operation cannot be satisfactorily described by its constructors because they have applied a method which is largely experimental. (Alan M. Turing) [3]</div>
+
+<p>We already discussed the inherent problem of inference posed by Hume, but with one extra assumption that the future is likely to resemble the past, and that is of course our best chance, we can see the idea of induction is incredibly useful. <i>Solomonoff's theory of inductive inference</i> is a mathematical formalism that gets data or a string as input and outputs a probability distribution over the plausible theories that are computable programs. Based on <i>Occam's razor</i>, the theory favors shorter descriptions and assigns a higher prior probability to them, so as stated by the Principle of Multiple Explanations it does not throw away any credible theory just because it is long as it might be the case that we have not yet collected enough data.</p>
+
+<h3>Symbolic GOFAI and Non-Logicist AI</h3>
+
+<p>Allen Newell and Herbert A. Simon believed that symbols lie at the root of intelligent action. They proposed the <i>Physical Symbol System Hypothesis</i> :</p>
+
+<div class="abstract">A physical symbol system has the necessary and sufficient means for general intelligent action. [2]</div>
+
+<p>They assert that intelligence will be realized by a universal computer. This is the result of studying formal logic and observing the power of syntactic manipulation of symbols. One of the greatest accomplishments of this generation was the advances in the automation of logical reasoning. Logic Theorist[1], proved 38 of the first 52 theorems from <i>Principia Mathematica</i>, with one of the proofs being simpler than the original proof by Whitehead and Russell. Starting from 5 simple axioms the program searches through an enormous tree of decisions to get to the given theorem. The path that program takes is a proof for the theorem. It also uses a number of heuristics to decide whether a branch of the tree is a promising strategy for proving the theorem, if not the program jumps to another branch.</p>
+
+  <figure>
+  <img src="https://drive.google.com/uc?export=view&id=1vRgDMsD7GGv_QbL3U2o8Z7X_HZ1ZSKB-" alt="Sorry!" style="width: 30vw;"/>
+  <figcaption>Five Axioms of Logic Theorist [1]</figcaption>
+</figure>
+
+
+<p>Being able to surpass Russell in proving a theorem, and beating Kasparov in chess while not being able to move around an inch by a billion rules without trouble is an example of <i>Moravec’s Paradox</i>. We cannot classify a picture using five axioms! This calls for new methods in AI.</p>
+
+<p>Non-logicist methods that flourished after the symbolic AI approach the problem of modeling intelligence by probabilistic methods. Namely Hidden Markov Models (HMM), Support Vector Machines, and Bayesian models or connectionist paradigms such as Hopfield Networks, MLPs, and CNN. Here one side of the scenario is the hardwired model of the outside world and the other side is the minimization of error or surprise. Information in the case of connectionist models is represented in the weights of connections between neurons. What statistical learning does is that it compresses and codifies the information inside data in terms of the model. The abstraction of the information inside data helps us better estimate the distribution of the source and generalize more optimally.</p>
+
+<p>With the power that comes with data and neural nets, we can do a large number of tasks especially those related to perception, with a minor problem that sometimes we don’t know what we are doing! They are less transparent because the neurons themselves induce the laws. Let the activation function of neurons be a unit step function. In a neural net with three layers, we can approximate any continuous function, according to the <i>Universal approximation theorem</i>, with any degree of accuracy using some rectangles. Here each neuron has a simple rule, IF the input (5*feature1 + 4*feature2, for example) is greater than some threshold THEN the output is one, which means the neuron fires. However, it will resonate differently with different neurons from the next layer that might be looking for different features encoded by weights. As we go deeper down exciting features (those that make a neuron fire!) become more abstract. The interpretability matters when people are diagnosed by a computer to have a disease and they want an explanation to know why. The figure below shows a neural network that distinguishes huskies and wolfs by the background.</p>
+
+  <figure>
+  <img src="https://drive.google.com/uc?export=view&id=1_dYt8gD1n1Qv0iSeoN9_6Z06zDbB2QbM" alt="Sorry!" style="width: 20vw;"/>
+  <figcaption>Raw data and explanation of a bad model's prediction in the “Husky vs Wolf ” task. (taken from [15])</figcaption>
+</figure>
+
+
+<p>Pandemonium architecture is agnostic to the distinction in this section, meaning that it can learn through a mechanism like backpropagation or it can be programmed explicitly. The point, however, is that it breaks down an image into its constituent parts by its demons or neurons.</p>
+
+  <figure>
+  <img src="https://drive.google.com/uc?export=view&id=1rqbFIHo45AOkeeiKbecfp7S9HGK57xAf" alt="Sorry!" style="width: 30vw;"/>
+  <figcaption>Oliver Selfridge's Pandemonium Architecture</figcaption>
+</figure>
+
+
+<h3>Autonomy and Predictability</h3>
+
+
+<p>Can we build autonomous robots? One definition of autonomy is being able to do a task without the need for constant human intervention. In some stronger sense, it might be interesting to us if we cannot predict its behavior entirely. Well if we can determine its behavior it doesn’t necessarily mean that it is not autonomous as compatibilists such as Schopenhauer might argue that a robot can do what it wants, but not want what it wants!</p>
+
+<div class="abstract">… The almost subconscious fear that we could be soulless machines manipulated by other powers poses a profound philosophical conundrum that has been pondered since ancient times: If we are the creations of the gods or unknown forces, how can we have self-identity, agency, and free will? Plato (Laws 644d–e) was one of the first to consider the idea of humans as nonautonomous: “Let us suppose that each of us living creatures is an ingenious puppet of the gods.”[4]</div>
+
+<p>There are many ways in which the behavior of a system or a robot is not predictable. Even if we assume that the behavior is deterministic, it might be chaotic in a way that makes long term prediction impossible. There is no analytic solution to know what will happen one minute from now. We have to wait one minute or simulate the dynamics to see what will happen. And the simulation itself must take one minute itself as we have to implement the program itself again! That is why machines take Turing by surprise. Because we will not know what will happen until we follow the dynamics of the system or maybe it utilizes a randomized algorithm that makes it impossible for us to know its next decision. </p>
+
+
+  <h3>Bibliography and External Links</h3>
+  
+  
+  <div class="abstract">
+
+
+
+
+    <p>1. A. Newell and H. Simon, The logic theory machine A complex information processing system</p>
+
+    <p>2. A. Newell and H. Simon, Computer Science as Empirical Inquiry: Symbols and Search</p>
+
+    <p>3. A. M. Turing, Computing Machinery And Intelligence</p>
+
+    <p>4. Adrienne Mayor, Gods and Robots: Myths, Machines, and Ancient Dreams of Technology</p>
+    
+    <p>5. Ambrose Bierce, The Devil's Dictionary</p>
+
+    
+    <p>6. David Hume, Edited by Peter Millican, An Enquiry concerning Human Understanding</p>
+
+    <p>7. Daniel Dennett, Darwin’s "strange inversion of reasoning"</p>
+
+    <p>8. Erwin Schrödinger, What Is Life?</p>
+
+    <p>9. Francis Bacon, Novum Organum</p>
+
+    <p>10. G. Dyson, Darwin among the machines</p>
+
+    <p>11. G. W. Leibniz, Monadology, translated by Robert Latta; revised by Donald Rutherford</p>
+
+    <p>12. Herbert A. Simon, Explaining the Ineffable: Al on the Topics of Intuition, Insight and Inspiration</p>
+
+    <p>13. Marvin Minsky, The Society of Mind</p>
+
+    <p>14. Marcus Hutter, Foundations of Universal Induction and Intelligent Agents</p>
+
+    <p>15. M. T. Ribeiro, S. Singh, C. Guestrin "Why Should I Trust You?": Explaining the Predictions of Any Classifier</p>
+
+    <p>16. Norbert Wiener, Cybernetics or Control and Communication in the Animal and the Machine</p>
+
+    <p>17. Organon, Aristotle</p>
+
+    <p>18. Richard S. Sutton and Andrew G. Barto, Reinforcement Learning:An Introduction</p>
+
+    <p>19. Stuart J. Russell and Peter Norvig, Artificial Intelligence A Modern Approach</p>
+    
+    <p>20. S. A. Corson, E. O. Corson, From Descartes to Pavlov to Anokhin: The Evolution of General Systems Concepts in Biomedical Sciences in Eastern Europe</p>
+
+    
+    <p>21. Shai Ben-David and Shai Shalev-Shwartz, Understanding Machine Learning: From Theory to Algorithms</p>
+    
+    <p>22. Thomas Hobbes, Leviathan Or the Matter Form and Power of a Commonwealth, Ecclesiastical and Civil</p>
+
+    <p>23. T. Kohonen, Self-Organization and Associative Memory</p>
+
+    <p>24. William J. Rapaport, Philosophy of Computer Science</p>
+    
+<p>25. <a href="https://cs.stanford.edu/people/eroberts/courses/soco/projects/1998-99/robotics/history.html#:~:text=The%20earliest%20robots%20as%20we,industry%2C%20but%20did%20not%20succeed." target="_blank">Eric Roberts, Robotics: A Brief History</a></p>
+
+
+<p>26. <a href="https://courses.media.mit.edu/2016spring/mass63/wp-content/uploads/sites/40/2016/02/Symbolic-vs.-Subsymbolic.pptx_.pdf" target="_blank">Henry Lieberman, Symbolic vs. Subsymbolic AI</a></p>
+
+    <p>27. <a href="https://www.rbjones.com/rbjpub/philos/history/xh003.html" target="_blank">Leibniz and the Automation of Reason
+</a></p>
+
+<p>28. <a href="https://airandspace.si.edu/exhibitions/codex/codex.cfm#page-32-33" target="_blank">Leonardo da Vinci's Codex on the Flight of Birds
+</a></p>
+
+
+<p>29. <a href="https://youtu.be/f1t2ULXXCVk" target="_blank">Marvin Minsky - Psychology should not be like physics</a></p>
+
+
+<p>30. <a href="https://astrobiology.nasa.gov/research/life-detection/about/#:~:text=The%20NASA%20definition%20of%20life,Organic%20Life%20in%20Planetary%20Systems.&text=These%20are%20the%20central%20elements%20of%20the%20Darwinian%20paradigm" target="_blank">NASA Webstie, About Life Detection</a></p>
+
+<p>31. <a href="http://pespmc1.vub.ac.be/Papers/Cybernetics-EPST.pdf" target="_blank">Principia Cybernetica, Cybernetics and Second-OrderCybernetics</a></p>
+
+
+<p>32. <a href="https://plato.stanford.edu/entries/artificial-intelligence/" target="_blank">Stanford Encyclopedia of Philosophy, Artificial Intelligence</a></p>
+
+<p>33. <a href="https://plato.stanford.edu/entries/aristotle-biology/" target="_blank">Stanford Encyclopedia of Philosophy, Aristotle’s Biology</a></p>
+
+
+
+<p>34. <a href="https://plato.stanford.edu/entries/consciousness-animal/" target="_blank">Stanford Encyclopedia of Philosophy, Animal Consciousness</a></p>
+
+
+<p>35. <a href="https://plato.stanford.edu/entries/consciousness-animal/" target="_blank">Stanford Encyclopedia of Philosophy, Connectionism</a></p>
+
+<p>36. <a href="https://youtu.be/_z-SUo2wP4I" target="_blank">What is Life? - with Paul Nurse
+</a></p>
+
+
+
+ 
+  </div>
+
+  
+  </div>
+  <div class="columnRight">
+  	<p style="margin-bottom: 10vw;"></p>
+    <p style="margin-bottom: 30vw;">It often does more harm than good to force definitions on things we don't understand.(Marvin Minsky)</p>
+    <p style="margin-bottom: 10vw;">MIND. A mysterious form of matter secreted by the brain' Its chief activity consists in the endeavor to ascertain its own nature, the futility of the attempt being due to the fact that it has nothing but itself to know itself with. (The Devil's Dictionary)</p>
+    <p style="margin-bottom: 10vw;">I sometimes wonder whether robots were invented to answer philosophers’ questions<br/> (TIK-TOK)</p>
+    <p style="margin-bottom: 170vw;">Isn't it amazing that we can think, not knowing what it means to think? (Marvin Minsky)</p>
+    
+    <p style="margin-bottom: 10vw;">Life is a self-sustaining chemical system capable of Darwinian evolution. (<a href="https://astrobiology.nasa.gov/research/life-detection/about/#:~:text=The%20NASA%20definition%20of%20life,Organic%20Life%20in%20Planetary%20Systems.&text=These%20are%20the%20central%20elements%20of%20the%20Darwinian%20paradigm" target="_blank">NASA</a>)</p>
+
+    <p style="margin-bottom: 10vw;">To live is to cognize. (Humberto Maturana)</p>
+
+    <p style="margin-bottom: 10vw;">Science concerned with the study of systems of any nature which are capable of receiving, storing and processing information so as to use it for control." (A. N. Kolmogorov)</p>
+    <p style="margin-bottom: 60vw;">Cybernetic epistemology is in essence constructivist: knowledge cannot be passively absorbed from the environment, it must be actively constructed by the system itself.[31]</p>
+
+    <p style="margin-bottom: 10vw;">...the three connecting principles of all ideas are the relations of Resemblance, Contiguity, and Causation. (David Hume)</p>
+
+
+    <p style="margin-bottom: 70vw;">It may, therefore, be a subject worthy of curiosity, to enquire what is the nature of that evidence, which assures us of any real existence and matter of fact, beyond the present testimony of our senses, or the records of our memory. (David Hume)</p>
+    
+    <p style="margin-bottom: 10vw;">Everything existing in the universe is the fruit of chance and necessity. (Democritus)</p>
+    <p style="margin-bottom: 10vw;">Reason is nothing but reckoning. (Thomas Hobbes)</p>
+    <p style="margin-bottom: 80vw;">Nothing is in the understanding, which was not first in the senses. (John Locke)</p>
+    
+    <p style="margin-bottom: 200vw;">I want to claim that AI is better viewed as sharing with traditional epistemology the status of being a most general, most abstract asking of the top-down question: how is knowledge possible? (Dennett Brainstorms: Philosophical Essays on Mind and Psychology)</p>
+
+
+    <p style="margin-bottom: 10vw;">Machines take me by surprise with great frequency. This is largely because I do not do sufficient calculation to decide what to expect them to do … (Alan Turing)</p>
+
+  </div>
+</div>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+</script>
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html>
+
