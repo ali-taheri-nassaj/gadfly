@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Essay 4</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Essays about computer science, philosophy, and mathematics">
+  <meta name="keywords" content="platomaniac gadfly, gadfly, essay, computer science, mathematics, arithmetic, numbers, philosophy, computation">
+  <meta name="author" content="Ali Taherinassaj">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  
+<style>
+* {
+  box-sizing: border-box;
+}
+
+a { text-decoration: none; }
+
+.columnLeft {
+  float: left;
+  width: 25%;
+  padding: 1vw;
+  text-align: right;
+  font-family: 'Signika Negative', 'Merriweather',  sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size:1vw;
+}
+
+.columnMiddle {
+  float: left;
+  width: 50%;
+  padding: 1vw;
+  font-family: 'Signika Negative', 'Merriweather', sans-serif;
+  font-size:1.3vw;
+}
+
+.columnRight {
+  float: left;
+  width: 25%;
+  padding: 1vw;
+  text-align: center;
+  font-family: 'Signika Negative', 'Merriweather', sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size:1vw;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  height: 100%;
+}
+
+
+.abstract {
+
+  font-style: italic;
+  font-weight: 150;
+
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+
+
+h2 {
+text-align: center;
+}
+
+
+p {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:100%;
+  height:auto;
+}
+
+#header {
+  background: rgba(255, 255, 255, .5);
+  padding: 1%;
+  height: 5vw;
+}
+
+#header img {
+  float: left;
+  box-shadow: none;
+}
+
+#header ul {
+  list-style: none;
+  float: left;
+  padding-left: 0.8vw;
+  margin-top: 0.8vw;
+  margin-bottom: 1.5vw;
+}
+
+#header ul li {
+  float: left;
+  margin-left: 1.5vw;
+  font-size: 1.2vw;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+figcaption {
+
+  font-style: italic;
+  font-weight: 100;
+  text-align: center;
+  font-size: 1vw;
+
+}
+
+
+</style>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+
+<a id="top"></a>
+
+<div id="header">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#top">Top</a></li>
+    </ul>
+  </div>
+
+<body>
+
+<body>
+
+<div class="row" style="height=100%; background: rgb(204,204,204);
+background: linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(187,187,187,1) 25%, rgba(187,187,187,1) 75%, rgba(204,204,204,0.9939031708106566) 100%);">
+  
+
+
+  <div class="columnLeft">
+    
+    <p style="margin-bottom: 15em;"></p>
+
+    
+    
+    <p style="margin-bottom: 15em;">God created the integers; all else is the work of man.<br>(Leopold Kronecker)</br></p>
+    
+
+    <p style="margin-bottom: 3.8em;">The question before us-what is computation?—is at least as old as computer science.  It is one of those questions that will never be fully settled because new discoveries and maturing understandings constantly lead to new insights and questions about existing models. It is like the fundamental questions in other fields—for example, “what is life?” in biology and “what are the fundamental forces?” in physics—that will never be fully resolved. Engaging with the question is more valuable than finding a definitive answer.<br>(Peter J. Denning)</br></p>
+
+
+    <p></p>
+    
+    
+  </div>
+  <div class="columnMiddle" \>
+    
+    
+    <h2>Describing Numbers + Some Computers</h2>
+    
+    
+    <div class="abstract">
+    <p>Some thoughts and history about numbers, and fun videos about old computers.</p></div>
+    
+    <p>Pythagoreans saw the cosmos through the lens of numbers. In fact, the word cosmos itself was first used by Pythagoras himself to emphasize order and harmony of nature in terms of numbers. We have seen many of these harmonies in nature, for example droplets are spherical and beehives are hexagonal. We have come up with our empirical theories to justify the occurrences. In the first case, we say that the droplet behaves as if it is trying to minimize its potential energy by minimizing its surface area. And we know from mathematics that spheres satisfy this property. Pythagoreans took their idea of numbers so seriously that they associated numbers with abstract concepts such as “justice” which was represented by number four. While Pythagoreans thought that numbers are everywhere or everything, fictionalists think there is no such thing as a number. They say this is a false but useful story we have made up to make sense of the world, who knows no numbers.</p>
+
+
+    <p>But what are the numbers made of? Monad, Pythagoreans believed, is the indivisible, irreducible source of all other numbers. Every other number is the result of the composition of monads. Monad produces itself and is produced from itself.[1] It is kind of an Unmoved Mover. There are also many other different formalizations of numbers such as Peano Arithmetic.</p>
+
+    <p>What are the possible ways to describe numbers? Does “the smallest natural number that no one has ever written” exist? What about “the number that no one has ever described”? Did we just describe it? Is that a problem with natural languages? Let us begin with the language of straightedge and compass. The rules are simple. Each construction must be precisely specified and terminate in a finite number of steps. There are lots of things that can be done with a straightedge and compass. We can add, subtract, multiply, and divide. However, there are numbers that cannot be expressed by this language just like you cannot write the square root of two as the ratio of two whole numbers. For example, the third root of two is an algebraic number that cannot be constructed. Many of these problems appeared over time. We cannot double a cube, trisect an arbitrary triangle, or square a circle either.</p>
+
+    <p>We know that algebraic numbers are computable, which means that they can be derived by a Turing machine in a finite time with arbitrary accuracy. You just have to write down the number of digits you want on the tape as the input for the machine. We know that there are many root-finding algorithms that do the job such as Newton’s iterative algorithm. There are also numbers that are not algebraic, meaning that an algebraic equation cannot describe them. It is not trivial that they even exist. Actually, a famous French mathematician named Joseph Liouville proved their existence in 1884 and provided the first number, known as Liouville constant in 1851. Later pi and Euler’s number proved to be transcendental as well, each one by Hermite and Lindemann. However, that doesn’t mean that they are not computable. The well-known Archimedes’ algorithm calculates the digits of pi through an iterative procedure that can always be carried out further. In conclusion, pi is a sequence or a function that can be computed. \(\pi(0)=3, \pi(1)=3.1, \pi(2)=3.14, ...\)</p>
+
+    <p>So functions are also a way of describing numbers in terms of other numbers or dependent variables. For instance, “the greatest common divisor of a and b” is a function that takes two input arguments. We know that it is possible to compute its value by writing a for loop or in other terms, it is primitive recursive function. Of course, when you are the computer, you do not calculate it so wastefully and that's why Euclid came up with his algorithm for GCD. The algorithm is great because when we carry it out in schools, enormous numbers break down fast, or to be more precise its computational complexity is logarithmic. Many other functions are similar and they break down in various ways. However, there are computable functions that are not primitive recursive such as the Ackermann function.</p>
+
+    <p>What about the biggest number that can be produced by finite means? Well, this is in some sense the very definition of the Busy Beaver function. Beginning with an infinite tape of zeros, \(BB(n)\) is the maximum number of 1s that can be produced by a Turing machine that has n states, or cards in the words of T. Rado. It is easy to reason that BB(1) is 1 because after writing your first 1, you have to go to the halt state, or else it will loop forever. You can verify that the number of 1s that the cards in the figure below produce is 6, which happens to be \(BB(3)\). \(BB(n)\) is a non-computable function because you have no way of knowing whether a specific machine will halt or not. We have to follow the dynamics untill we either halt or we notice a circle or loop, but the period of the loop might be very very large. BB(5) has not yet been computed. </p>
+
+    <figure>
+      <img src="https://drive.google.com/uc?export=view&id=1kqbT6UAXCVKctEAS9HVF5b6QcTCyKZTt" alt="Sorry!" style="height: 10vw;"/>
+      <figcaption>A 3-state Turing Machine that outputs 6 zeros on the tape.</figcaption>
+    </figure>
+
+    <p>Chaitin’s \(\Omega\) is another instance of a beautiful uncomputable number. It is the halting probability of a random prefix-free Turing machine. Of course, the number depends on the choice of a specific language, but once we choose a language, it has a totally we-defined real value. One last number which is also worth noting is really tight to the foundational issues. Borel’s know-it-all number answers all possible mathematical questions. List all yes and no questions in alphabetical order, 1 for yes, and 0 for no, then all the possible mathematical answers are just a point in the real line. Some mathematicians believe that such an object should not exist. Watch [4] for further discussion. $$\Omega = \sum_{\text{p that halts}} 2^{-|p|}$$</p>
+
+
+
+    <p>Theoretical models of computation answer the question of what computation is. There are a lot of them such as lambda calculus, Turing Machines, Markov algorithms, and Random Access Machines, which are closer to our real computers and we usually think in their framework when figuring out the complexity of algorithms. But what are the first computers? For what were they used? How did they work? These are a couple of very interesting videos:</p>
+
+    
+
+
+    <p><iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/h4wQJfdhOlU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe><br/></p>
+
+    <p><iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/RLPVCJjTNgk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/></p>
+
+    <p><iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/NAsM30MAHLg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/></p>
+
+    <p><iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/vdra5Ms__9s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/></p>
+
+    <p><iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/hIinz4fKGpo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/></p>
+
+    <p><iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/aUXnhVrT4CI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/></p>
+
+    <p><iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/k4oGI_dNaPc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/></p>
+
+    <p><iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/3h71HAJWnVU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/></p>
+
+    <p><iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/qB3Ho7ocXr8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/></p>
+
+    <p>Can we ever build Characteristica Universalis to resolve all disputes by calculations? Does the Borel’s know-it-all number exist? For how long can we predict the future? Is there a physical phenomenon that computes something non-computable?[6] If the world is deterministic, can we say that prediction reduces to computation?! Are there any cases that if a computer is going to compute the future of the whole system, it is changing the environment in many ways such as producing heat, etc. How do we account for that? With computation? Are there any physical limits of that sort to computation? Is the mind a computer? Can machines think? Were Pythagoreans right? Is everything a number? Or is the whole cosmos a computer? </p>
+
+
+  <h3>Bibliography and External Links</h3>
+  
+  
+  <div class="abstract">
+
+
+
+
+    <p>1. Underwood Dudley, 1998, Numerology, Or, What Pythagoras Wrought</p>
+
+    <p>2. A.M. Turing, 1936, On computable numbers, with an application to the Entscheidungsproblem
+
+    <p>2. T. Rado, On Non-Computable Functions</p>
+
+    <p>3. <a href="https://www.scottaaronson.com/writings/bignumbers.html" target="_blank">Scott Aaronson, Who Can Name the Bigger Number?</a></p>
+
+    <p>4. <a href="https://youtu.be/Bo2w25fDLwY" target="_blank">Computability and problems with Set theory | Math History | NJ Wildberger</a></p>
+
+    <p>5. G. J. Chaitin, 1982, Godel's theorem and information</p>
+
+    <p>6. G. J. Chaitin, 2004, How real are real numbers?</p>
+
+    <p>7. William J. Rapaport, Philosophy of Computer Science</p>
+
+ 
+  </div>
+
+  
+  </div>
+  <div class="columnRight">
+  	<p style="margin-bottom: 10vw;"></p>
+    <p style="margin-bottom: 350vw;">Mathematics is the language in which God has written the universe<br/>(Galileo Galilei)</p>
+    <p style="margin-bottom: 30vw;">Why do people think computers can’t?<br/>(Marvin Minsky)</p>
+       
+
+  </div>
+</div>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+</script>
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html>
+
